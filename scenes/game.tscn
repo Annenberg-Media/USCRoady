@@ -1,3 +1,22 @@
-[gd_scene format=3 uid="uid://c0gofya7ubcni"]
+[gd_scene load_steps=5 format=3 uid="uid://c0gofya7ubcni"]
+
+[ext_resource type="PackedScene" uid="uid://2al74ur3n8xl" path="res://player/Player.tscn" id="1_xtfvc"]
+[ext_resource type="Script" path="res://scenes/camera_2d.gd" id="2_oinhx"]
+[ext_resource type="Texture2D" uid="uid://hacognbxgjte" path="res://sprites/Trojan.png" id="2_tellq"]
+[ext_resource type="TileSet" uid="uid://c2x2cx5v3mcej" path="res://tiles/TestingTiles.tres" id="3_xl4we"]
 
 [node name="Game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_oinhx")
+
+[node name="Trojan" type="Sprite2D" parent="."]
+position = Vector2(8, 3.8147e-06)
+scale = Vector2(4.42, 3.86)
+texture = ExtResource("2_tellq")
+
+[node name="Player" parent="." instance=ExtResource("1_xtfvc")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+visibility_layer = 3
+tile_set = ExtResource("3_xl4we")
