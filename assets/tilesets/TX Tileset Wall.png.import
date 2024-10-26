@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hacognbxgjte"
-path="res://.godot/imported/Trojan.png-5244b2752563733b3078a543212464cf.ctex"
+uid="uid://dohjsbbfyohk8"
+path="res://.godot/imported/TX Tileset Wall.png-e265df93f65362c64358236cfd69e74e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Trojan.png"
-dest_files=["res://.godot/imported/Trojan.png-5244b2752563733b3078a543212464cf.ctex"]
+source_file="res://assets/tilesets/TX Tileset Wall.png"
+dest_files=["res://.godot/imported/TX Tileset Wall.png-e265df93f65362c64358236cfd69e74e.ctex"]
 
 [params]
 

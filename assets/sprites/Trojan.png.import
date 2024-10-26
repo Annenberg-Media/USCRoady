@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjpbiq21h7gt8"
-path="res://.godot/imported/TX Struct.png-7e852f7be4c63292108610883fd9d6d9.ctex"
+uid="uid://hacognbxgjte"
+path="res://.godot/imported/Trojan.png-96f21698ec77da671e321bbb9a4f61d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://testing/TX Struct.png"
-dest_files=["res://.godot/imported/TX Struct.png-7e852f7be4c63292108610883fd9d6d9.ctex"]
+source_file="res://assets/sprites/Trojan.png"
+dest_files=["res://.godot/imported/Trojan.png-96f21698ec77da671e321bbb9a4f61d0.ctex"]
 
 [params]
 
