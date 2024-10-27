@@ -28,7 +28,9 @@ func _physics_process(_delta):
 		position.y -= MOVE_SPEED;
 		if below == 0:
 			score += 1;
-			get_parent().get_node("HUD").update_score(score)
+			get_parent().get_node("HUD").update_score(score);
+			if get_parent().get_node("TerrainGenerator").line_num - 10 < score:
+				get_parent().get_node("TerrainGenerator").load_new_terrain();
 		else:
 			below -= 1;
 

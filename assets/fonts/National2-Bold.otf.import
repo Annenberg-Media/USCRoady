@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b8xrmlrtl4byf"
-path="res://.godot/imported/National2-Bold.otf-09ce3de8a77b390ae30094c066b12179.fontdata"
+path="res://.godot/imported/National2-Bold.otf-6e45c9ff31290daed42779c15a7aad3f.fontdata"
 
 [deps]
 
-source_file="res://assets/National2-Bold.otf"
-dest_files=["res://.godot/imported/National2-Bold.otf-09ce3de8a77b390ae30094c066b12179.fontdata"]
+source_file="res://assets/fonts/National2-Bold.otf"
+dest_files=["res://.godot/imported/National2-Bold.otf-6e45c9ff31290daed42779c15a7aad3f.fontdata"]
 
 [params]
 

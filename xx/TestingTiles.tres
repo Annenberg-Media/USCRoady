@@ -1,17 +1,17 @@
 [gd_resource type="TileSet" load_steps=19 format=3 uid="uid://c2x2cx5v3mcej"]
 
-[ext_resource type="Texture2D" uid="uid://4h4ifwdk82ln" path="res://assets/tilesets/TX Plant.png" id="1_ivak4"]
-[ext_resource type="Texture2D" uid="uid://dh2e0tpn1572c" path="res://assets/tilesets/TX Player.png" id="2_2a35e"]
-[ext_resource type="Texture2D" uid="uid://bedrtsw2evdio" path="res://assets/tilesets/TX Props.png" id="3_wfi5s"]
-[ext_resource type="Texture2D" uid="uid://ccvmehw0jsir" path="res://assets/tilesets/TX Shadow Plant.png" id="4_cpxhk"]
-[ext_resource type="Texture2D" uid="uid://cpwrdwi3njxn5" path="res://assets/tilesets/TX Shadow.png" id="5_7glep"]
-[ext_resource type="Texture2D" uid="uid://cjpbiq21h7gt8" path="res://assets/tilesets/TX Struct.png" id="6_1wcc0"]
-[ext_resource type="Texture2D" uid="uid://dx4p70it37je0" path="res://assets/tilesets/TX Tileset Grass.png" id="7_ds22o"]
-[ext_resource type="Texture2D" uid="uid://it1smiihwsuj" path="res://assets/tilesets/TX Tileset Stone Ground.png" id="8_kwk2b"]
-[ext_resource type="Texture2D" uid="uid://dohjsbbfyohk8" path="res://assets/tilesets/TX Tileset Wall.png" id="9_wyg2w"]
+[ext_resource type="Texture2D" uid="uid://4h4ifwdk82ln" path="res://xx/TX Plant.png" id="1_wth6m"]
+[ext_resource type="Texture2D" uid="uid://dh2e0tpn1572c" path="res://xx/TX Player.png" id="2_ohuwx"]
+[ext_resource type="Texture2D" uid="uid://bedrtsw2evdio" path="res://xx/TX Props.png" id="3_8mdmp"]
+[ext_resource type="Texture2D" uid="uid://ccvmehw0jsir" path="res://xx/TX Shadow Plant.png" id="4_dfkaq"]
+[ext_resource type="Texture2D" uid="uid://cpwrdwi3njxn5" path="res://xx/TX Shadow.png" id="5_iiwjv"]
+[ext_resource type="Texture2D" uid="uid://cjpbiq21h7gt8" path="res://xx/TX Struct.png" id="6_qk1aj"]
+[ext_resource type="Texture2D" uid="uid://dx4p70it37je0" path="res://xx/TX Tileset Grass.png" id="7_oqplk"]
+[ext_resource type="Texture2D" uid="uid://it1smiihwsuj" path="res://xx/TX Tileset Stone Ground.png" id="8_ajefj"]
+[ext_resource type="Texture2D" uid="uid://dohjsbbfyohk8" path="res://xx/TX Tileset Wall.png" id="9_ow5kr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_arwnr"]
-texture = ExtResource("1_ivak4")
+texture = ExtResource("1_wth6m")
 4:0/0 = 0
 5:0/0 = 0
 3:1/0 = 0
@@ -256,7 +256,7 @@ texture = ExtResource("1_ivak4")
 7:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w0qbk"]
-texture = ExtResource("2_2a35e")
+texture = ExtResource("2_ohuwx")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -287,7 +287,7 @@ texture = ExtResource("2_2a35e")
 7:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sjls4"]
-texture = ExtResource("3_wfi5s")
+texture = ExtResource("3_8mdmp")
 14:0/0 = 0
 15:0/0 = 0
 24:0/0 = 0
@@ -643,7 +643,7 @@ texture = ExtResource("3_wfi5s")
 19:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_788b4"]
-texture = ExtResource("4_cpxhk")
+texture = ExtResource("4_dfkaq")
 4:6/0 = 0
 5:6/0 = 0
 6:6/0 = 0
@@ -744,7 +744,7 @@ texture = ExtResource("4_cpxhk")
 23:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x5ip2"]
-texture = ExtResource("5_7glep")
+texture = ExtResource("5_iiwjv")
 24:0/0 = 0
 25:0/0 = 0
 2:1/0 = 0
@@ -1066,7 +1066,7 @@ texture = ExtResource("5_7glep")
 11:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3htwa"]
-texture = ExtResource("6_1wcc0")
+texture = ExtResource("6_qk1aj")
 25:1/0 = 0
 26:1/0 = 0
 27:1/0 = 0
@@ -1271,7 +1271,7 @@ texture = ExtResource("6_1wcc0")
 18:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phxkv"]
-texture = ExtResource("7_ds22o")
+texture = ExtResource("7_oqplk")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1530,7 +1530,7 @@ texture = ExtResource("7_ds22o")
 15:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bsn0s"]
-texture = ExtResource("8_kwk2b")
+texture = ExtResource("8_ajefj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1733,7 +1733,7 @@ texture = ExtResource("8_kwk2b")
 15:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sx77f"]
-texture = ExtResource("9_wyg2w")
+texture = ExtResource("9_ow5kr")
 
 [resource]
 sources/0 = SubResource("TileSetAtlasSource_arwnr")

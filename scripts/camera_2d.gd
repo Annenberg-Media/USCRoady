@@ -9,7 +9,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	print(get_parent().getScore())
 	if get_parent().score > 10 && get_parent().score != score:
 		score = get_parent().score;
 		limit_bottom = (score - 10) * -64;
