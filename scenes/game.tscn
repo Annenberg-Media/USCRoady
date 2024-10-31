@@ -24,7 +24,7 @@ tile_set = ExtResource("3_xl4we")
 position = Vector2(-2, -64)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(2, 126)
+position = Vector2(0, 128)
 limit_left = -360
 limit_right = 360
 limit_bottom = 0

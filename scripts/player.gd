@@ -3,7 +3,8 @@ extends CharacterBody2D
 # speed in pixels/sec
 var speed = 500 
 
-const MOVE_SPEED = 64
+const MOVE_SPEED = 64;
+const MIDDLE_SQUARE = 10;
 
 var score = 0;
 var below = 0;
@@ -29,7 +30,7 @@ func _physics_process(_delta):
 		if below == 0:
 			score += 1;
 			get_parent().get_node("HUD").update_score(score);
-			if get_parent().get_node("TerrainGenerator").line_num - 10 < score:
+			if get_parent().get_node("TerrainGenerator").line_num - (MIDDLE_SQUARE + 2) < score:
 				get_parent().get_node("TerrainGenerator").load_new_terrain();
 		else:
 			below -= 1;
@@ -40,6 +41,7 @@ func _physics_process(_delta):
 	
 
 	if position.y > -64 + cameraBottom:
+		below -= 1;
 		position.y = -64 + cameraBottom;
 	
 	position.x = clamp(position.x, -320, 320);

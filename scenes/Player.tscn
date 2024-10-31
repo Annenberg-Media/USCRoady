@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://hacognbxgjte" path="res://assets/sprites/Trojan.png" id="2_0e1le"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_56siu"]
-size = Vector2(46, 91)
+size = Vector2(46, 43)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(-2, -2)
@@ -17,6 +17,6 @@ position = Vector2(4, -1)
 texture = ExtResource("2_0e1le")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 1.5)
+position = Vector2(2, 25.5)
 shape = SubResource("RectangleShape2D_56siu")
 debug_color = Color(0.429453, 0.458148, 1, 0.42)
