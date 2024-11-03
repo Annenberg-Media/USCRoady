@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpwrdwi3njxn5"
-path="res://.godot/imported/TX Shadow.png-1f05578466ad461b56be25461bf1a2f0.ctex"
+uid="uid://j1hchxgvhtld"
+path="res://.godot/imported/car_1.png-494eee6bccdd232d61bc81c358c44c3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://xx/TX Shadow.png"
-dest_files=["res://.godot/imported/TX Shadow.png-1f05578466ad461b56be25461bf1a2f0.ctex"]
+source_file="res://assets/sprites/car_1.png"
+dest_files=["res://.godot/imported/car_1.png-494eee6bccdd232d61bc81c358c44c3b.ctex"]
 
 [params]
 

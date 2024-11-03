@@ -1,15 +1,12 @@
 extends CharacterBody2D
 
-# speed in pixels/sec
-var speed = 500 
-
 const MOVE_SPEED = 64;
 const MIDDLE_SQUARE = 10;
 
 var score = 0;
 var below = 0;
 
-func getScore():
+func get_score():
 	return score;
 
 func _physics_process(_delta):

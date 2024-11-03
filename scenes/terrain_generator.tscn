@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bt4dlxv81y2jj"]
 
-[ext_resource type="TileSet" uid="uid://c12rg2ikikss4" path="res://assets/tilesets/testgeneration.tres" id="1_6ijxf"]
+[ext_resource type="TileSet" uid="uid://c12rg2ikikss4" path="res://assets/tilesets/tileset.tres" id="1_6ijxf"]
 [ext_resource type="Script" path="res://scripts/terrain_generator.gd" id="2_82og2"]
 
 [node name="TerrainGenerator" type="TileMapLayer"]
