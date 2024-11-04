@@ -1,4 +1,4 @@
-extends AnimatableBody2D
+extends Area2D
 
 const MAX_X = 500;
 const MIN_Y = 100;
@@ -17,3 +17,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	position.x += dir * speed * delta;
 	if abs(position.x) > MAX_X : queue_free();
+
+
+func _on_car_body_entered(body: Node2D) -> void:
+	get_node("../../../Player").stop_movement();
+	get_node("../../../GameOver").show();

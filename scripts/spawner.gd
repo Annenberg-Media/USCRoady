@@ -1,5 +1,5 @@
 
-extends StaticBody2D
+extends Area2D
 
 @export var car_scene: PackedScene
 
@@ -21,7 +21,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	spawn_timer -= delta;
-	if (get_node("../../Player/Camera2D").get_screen_center_position().y + 704)/4 < y_pos: queue_free();
+	if (get_node("../../Player/Camera2D").get_screen_center_position().y + 704)/8 < y_pos: queue_free();
 	if spawn_timer <= 0:
 		spawn_timer = spawn_inc;
 		var car = car_scene.instantiate();

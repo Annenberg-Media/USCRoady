@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=4 uid="uid://c0gofya7ubcni"]
+[gd_scene load_steps=9 format=4 uid="uid://c0gofya7ubcni"]
 
 [ext_resource type="PackedScene" uid="uid://2al74ur3n8xl" path="res://scenes/player.tscn" id="1_xtfvc"]
 [ext_resource type="PackedScene" uid="uid://bt4dlxv81y2jj" path="res://scenes/terrain_generator.tscn" id="2_bwvcg"]
 [ext_resource type="PackedScene" uid="uid://d1i1nbnlroyrd" path="res://scenes/spawner.tscn" id="2_fe7jk"]
-[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="4_505mm"]
-[ext_resource type="Script" path="res://scripts/canvas_layer.gd" id="5_2yb8o"]
-[ext_resource type="FontFile" uid="uid://b8xrmlrtl4byf" path="res://assets/fonts/National2-Bold.otf" id="6_qt04l"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="4_505mm"]
+[ext_resource type="PackedScene" uid="uid://cppbohef7tei" path="res://scenes/hud.tscn" id="5_8n3ie"]
+[ext_resource type="PackedScene" uid="uid://c0i5goroko8ks" path="res://scenes/game_over.tscn" id="6_qd4ya"]
+[ext_resource type="PackedScene" uid="uid://c2xvg5cdk5tk7" path="res://scenes/game_start.tscn" id="7_yuoqk"]
+[ext_resource type="Script" path="res://scripts/game_start.gd" id="8_363ho"]
 
 [node name="Game" type="Node2D"]
 
@@ -25,23 +27,9 @@ limit_right = 360
 limit_bottom = 0
 script = ExtResource("4_505mm")
 
-[node name="HUD" type="CanvasLayer" parent="."]
-script = ExtResource("5_2yb8o")
+[node name="HUD" parent="." instance=ExtResource("5_8n3ie")]
 
-[node name="Score" type="Label" parent="HUD"]
-z_index = 200
-anchors_preset = -1
-anchor_left = 0.2375
-anchor_top = -0.996875
-anchor_right = 0.475
-anchor_bottom = -0.946094
-offset_left = 344.0
-offset_top = 1277.0
-offset_right = 374.5
-offset_bottom = 1339.97
-grow_horizontal = 0
-theme_override_fonts/font = ExtResource("6_qt04l")
-theme_override_font_sizes/font_size = 64
-text = "0"
-horizontal_alignment = 2
-metadata/_edit_use_anchors_ = true
+[node name="GameOver" parent="." instance=ExtResource("6_qd4ya")]
+
+[node name="GameStart" parent="." instance=ExtResource("7_yuoqk")]
+script = ExtResource("8_363ho")

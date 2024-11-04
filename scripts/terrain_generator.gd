@@ -33,7 +33,7 @@ func load_new_terrain():
 					if r == 1: right = true;
 					var spawner = spawner_scene.instantiate();
 					spawner.right = right;
-					spawner.y_pos = (-line_num-y-0.5)*16;
+					spawner.y_pos = (-line_num-y-0.5)*8;
 					add_child(spawner);
 			var rand_idxs = [0,1,2,3,4,5,6,7,8,9,10,11,12];
 			rand_idxs.shuffle();
