@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/car_sprite.gd" id="1_yvc1s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mjh4"]
-size = Vector2(20, 12)
+size = Vector2(12, 12)
 
 [node name="Car" type="Area2D"]
 script = ExtResource("1_bcgl8")

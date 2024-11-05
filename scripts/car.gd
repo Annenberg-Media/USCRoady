@@ -19,6 +19,10 @@ func _process(delta: float) -> void:
 	if abs(position.x) > MAX_X : queue_free();
 
 
-func _on_car_body_entered(body: Node2D) -> void:
+func _on_car_body_entered(_body: Node2D) -> void:
 	get_node("../../../Player").stop_movement();
+	var score = get_node("../../../Player").score;
+	if Global.data.high_score < score: 
+		Global.data.high_score = score;
+	get_node("../../../GameOver").set_text(score, Global.data.high_score);
 	get_node("../../../GameOver").show();
