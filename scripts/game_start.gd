@@ -4,7 +4,7 @@ const START_TIMER = 5;
 var timer = 0;
 var active = true;
 
-
+# Might need to fix the way this is being centered 
 func _ready() -> void:
 	if Global.data.high_score != 0:
 		hide();
