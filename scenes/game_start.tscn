@@ -156,28 +156,28 @@ vertical_alignment = 1
 
 [node name="Right" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(438, 641)
+position = Vector2(438, 569)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_ep3kd")
 autoplay = "default"
 
 [node name="Left" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(298, 641)
+position = Vector2(298, 569)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_hihbh")
 autoplay = "default"
 
 [node name="Up" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(368, 576)
+position = Vector2(368, 504)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_3l6mq")
 autoplay = "default"
 
 [node name="Down" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(368, 641)
+position = Vector2(368, 569)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_agmi5")
 autoplay = "default"
