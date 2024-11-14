@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sgfvsmjkwj0m"
-path="res://.godot/imported/USCRoady.icon.png-98072a9daa207efc6d25b98f75d1b87a.ctex"
+path="res://.godot/imported/USCRoady.icon.png-99f93ba3acbcdfc8de3227c50b629e0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://USCRoady.icon.png"
-dest_files=["res://.godot/imported/USCRoady.icon.png-98072a9daa207efc6d25b98f75d1b87a.ctex"]
+source_file="res://web-build/USCRoady.icon.png"
+dest_files=["res://.godot/imported/USCRoady.icon.png-99f93ba3acbcdfc8de3227c50b629e0e.ctex"]
 
 [params]
 
