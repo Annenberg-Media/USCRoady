@@ -9,14 +9,11 @@
   </body>
 </html>
 -->
-
-
-
 <!--https://stackoverflow.com/questions/17838607/making-an-iframe-responsive-->
 <!--https://stackoverflow.com/questions/6117349/how-to-keep-a-div-constant-in-size-as-the-user-zooms-in-and-out-on-the-page-->
 <!--https://stackoverflow.com/questions/5867985/full-screen-iframe-with-a-height-of-100-->
 <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag-->
-<!--https://stackoverflow.com/questions/37688873/responsive-iframe-with-fixed-div-beneath-it-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,58 +22,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>USC Crossy Road</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(255, 0, 110);
-            overflow: hidden;
-        }
-
-
-        .game-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;
+            margin: 0;
             overflow: hidden;
-        }
-
-        .game-container {
-            position: relative;
-            width: 720px;
-            height: 1280px;
-            transform: scale(0.5);
-            transform-origin: center center;
+            background-color: rgb(255, 0, 110);
         }
 
         .game-window {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: relative;
             background: grey;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgb(0, 148, 255);
             padding: 20px;
-            box-sizing: border-box;
+            width: 720px;
+            height: 1280px;
+            min-width: 720px;
+            min-height: 1280px;
+            transform: scale(0.5);
+            transform-origin: center top;
         }
 
         .iframe-container {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            bottom: 20px;
+            width: 720px;
+            height: 1280px;
+            min-width: 720px;
+            min-height: 1280px;
         }
 
             .iframe-container iframe {
+                position: absolute;
                 border: 0;
                 width: 100%;
                 height: 100%;
@@ -84,13 +63,9 @@
     </style>
 </head>
 <body>
-    <div class="game-wrapper">
-        <div class="game-container">
-            <div class="game-window">
-                <div class="iframe-container">
-                    <iframe src="/web-build/USCRoady.html" title="USC Roady"></iframe>
-                </div>
-            </div>
+    <div class="game-window">
+        <div class="iframe-container">
+            <iframe src="/web-build/USCRoady.html" title="USC Roady"></iframe>
         </div>
     </div>
 </body>
