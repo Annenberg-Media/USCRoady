@@ -23,20 +23,24 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .game-window {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: fit-content;
+            height: fit-content;
         }
 
         .iframe-container {
-            overflow: hidden;
-            padding-top: 66.67%;
-            position: relative;
-            width: 90%;
-            max-width: 400px;
+            width: 400px;
+            height: 300px;
         }
 
             .iframe-container iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
                 border: 0;
                 width: 100%;
                 height: 100%;
@@ -44,8 +48,10 @@
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="/web-build/USCRoady.html" title="USC Roady"></iframe>
+    <div class="game-window">
+        <div class="iframe-container">
+            <iframe src="/web-build/USCRoady.html" title="USC Roady"></iframe>
+        </div>
     </div>
 </body>
 </html>
