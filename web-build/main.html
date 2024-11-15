@@ -29,12 +29,12 @@
             min-height: 100vh;
             margin: 0;
             overflow: hidden;
-            background-color: rgb(255, 0, 110);
+            background-color: rgb(255, 0, 0);
         }
 
         .game-window {
             position: relative;
-            background: grey;
+            background: blue;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgb(0, 148, 255);
             padding: 20px;
@@ -42,8 +42,8 @@
             height: 1280px;
             min-width: 720px;
             min-height: 1280px;
-            transform: scale(0.5);
-            transform-origin: center top;
+            transform: scale(1);
+            transform-origin: center center;
         }
 
         .iframe-container {
@@ -54,12 +54,12 @@
             min-height: 1280px;
         }
 
-            .iframe-container iframe {
-                position: absolute;
-                border: 0;
-                width: 100%;
-                height: 100%;
-            }
+        .iframe-container iframe {
+            position: absolute;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
