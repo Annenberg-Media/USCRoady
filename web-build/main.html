@@ -12,8 +12,6 @@
 <!--https://stackoverflow.com/questions/17838607/making-an-iframe-responsive-->
 <!--https://stackoverflow.com/questions/6117349/how-to-keep-a-div-constant-in-size-as-the-user-zooms-in-and-out-on-the-page-->
 <!--https://stackoverflow.com/questions/5867985/full-screen-iframe-with-a-height-of-100-->
-<!--https://stackoverflow.com/questions/55821676/setting-the-scale-of-an-iframe-->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,39 +24,45 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background-color: rgb(255, 0, 110);
             overflow: auto;
+            background-color: rgb(255, 0, 110);
         }
 
-        .game-border {
+        .game-window {
+            position: relative;
             background: grey;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgb(0, 148, 255);
             padding: 20px;
-            text-align: center;
-        }
-
-        .game-frame {
-            border: none;
+            width: 720px;
             height: 1280px;
+            min-width: 720px;
+            min-height: 1280px;
+            transform: scale(0.5);
+            transform-origin: center top;
         }
 
-        .breaker {
-            clear: both;
+        .iframe-container {
+            position: absolute;
+            width: 720px;
+            height: 1280px;
+            min-width: 720px;
+            min-height: 1280px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            border: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="game-border" id="gameBack">
-        <iframe src="/web-build/USCRoady.html"
-                width="720"
-                class="game-frame"
-                id="gameCont"
-                frameborder="0"
-                scrolling="no"
-                sandbox>
-        </iframe>
+    <div class="game-window">
+        <div class="iframe-container">
+            <iframe src="/web-build/USCRoady.html" title="USC Roady"></iframe>
+        </div>
     </div>
-    <div class="breaker" id="breaker"></div>
 </body>
 </html>
