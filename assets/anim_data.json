@@ -1,0 +1,26 @@
+[
+  {
+	"filename": "car_0.png",
+	"hframes": 9
+  },
+  {
+	"filename": "car_1.png",
+	"hframes": 7
+  },
+  {
+	"filename": "car_2.png",
+	"hframes": 8
+  },
+  {
+	"filename": "car_3.png",
+	"hframes": 8
+  },
+  {
+	"filename": "cycle_0.png",
+	"hframes": 10
+  },
+  {
+	"filename": "cycle_1.png",
+	"hframes": 9
+  }
+]

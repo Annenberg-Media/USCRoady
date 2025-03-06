@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0i5goroko8ks"]
+
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_bepqg"]
+[ext_resource type="FontFile" uid="uid://b8xrmlrtl4byf" path="res://assets/fonts/National2-Bold.otf" id="1_odui0"]
+
+[node name="Game Over" type="CanvasLayer"]
+script = ExtResource("1_bepqg")
+
+[node name="DeathBackground" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.8, 0, 0, 0.34902)
+
+[node name="GameOverLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -134.5
+offset_top = -105.5
+offset_right = 134.5
+offset_bottom = -54.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_odui0")
+theme_override_font_sizes/font_size = 50
+text = "Game Over!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResetGameButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.0
+offset_top = 55.5
+offset_right = 85.0
+offset_bottom = 104.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_odui0")
+theme_override_font_sizes/font_size = 40
+text = "Restart?"
+
+[connection signal="pressed" from="ResetGameButton" to="." method="_on_reset_game_button_pressed"]

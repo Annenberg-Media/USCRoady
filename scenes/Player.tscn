@@ -1,19 +1,28 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://2al74ur3n8xl"]
 
-[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_dopfj"]
+[ext_resource type="Texture2D" uid="uid://hacognbxgjte" path="res://assets/sprites/Trojan.png" id="2_0e1le"]
+[ext_resource type="AudioStream" uid="uid://do7b2h6h65yqh" path="res://audio/542320-zapsplat-cartoon-spring-boing-jump-jaw-harp-short-punchy-60834.wav" id="3_m8lay"]
 
-[sub_resource type="CubeMesh" id=1]
+[sub_resource type="CircleShape2D" id="CircleShape2D_6r3wi"]
+radius = 20.0
 
-[sub_resource type="BoxShape" id=2]
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-2, -2)
+script = ExtResource("1_dopfj")
 
-[node name="Player" type="RigidBody"]
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
+[node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+texture_filter = 1
+position = Vector2(4, -1)
+texture = ExtResource("2_0e1le")
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 1 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 25)
+shape = SubResource("CircleShape2D_6r3wi")
+debug_color = Color(0.429453, 0.458148, 1, 0.42)
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 2 )
+[node name="MoveSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_m8lay")
+volume_db = -17.864
+pitch_scale = 0.73

@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=4 uid="uid://c0gofya7ubcni"]
+
+[ext_resource type="PackedScene" uid="uid://2al74ur3n8xl" path="res://scenes/Player.tscn" id="1_xtfvc"]
+[ext_resource type="PackedScene" uid="uid://bt4dlxv81y2jj" path="res://scenes/terrain_generator.tscn" id="2_bwvcg"]
+[ext_resource type="PackedScene" uid="uid://d1i1nbnlroyrd" path="res://scenes/spawner.tscn" id="2_fe7jk"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="4_505mm"]
+[ext_resource type="PackedScene" uid="uid://cppbohef7tei" path="res://scenes/hud.tscn" id="5_8n3ie"]
+[ext_resource type="PackedScene" uid="uid://c0i5goroko8ks" path="res://scenes/game_over.tscn" id="6_qd4ya"]
+[ext_resource type="PackedScene" uid="uid://c2xvg5cdk5tk7" path="res://scenes/game_start.tscn" id="7_yuoqk"]
+[ext_resource type="Script" path="res://scripts/game_start.gd" id="8_363ho"]
+
+[node name="Game" type="Node2D"]
+
+[node name="TerrainGenerator" parent="." instance=ExtResource("2_bwvcg")]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAD5////AAABAAEAAAD6////AAABAAEAAAD7////AAACAAEAAAD8////AAADAAEAAAD9////AAAEAAEAAAD+////AAAFAAEAAAD/////AAAGAAEAAAAAAP//AAAHAAEAAAABAP//AAAIAAEAAAACAP//AAAJAAEAAAADAP//AAAKAAEAAAAEAP//AAALAAEAAAAFAP//AAABAAEAAAD6//7/AAAFAAEAAAD9//3/AAAFAAEAAAACAP7/AAAFAAEAAAAEAP7/AAAHAAEAAAD8//7/AAAHAAEAAAAAAP3/AAAHAAEAAAABAP7/AAAIAAEAAAD6//3/AAAIAAEAAAADAP3/AAAIAAEAAAD+//7/AAAGAAEAAAAEAP3/AAAGAAEAAAD5//7/AAABAAEAAAD///7/AAAAAAEAAAD7//3/AAAAAAEAAAACAP3/AAACAAEAAAD9//7/AAALAAEAAAD///3/AAAJAAEAAAD5//3/AAABAAEAAAD8//3/AAACAAEAAAAAAP7/AAABAAEAAAAFAP7/AAABAAEAAAAFAP3/AAABAAEAAAD+//3/AAADAAEAAAADAP7/AAADAAEAAAABAP3/AAAJAAEAAAD7//7/AAAJAAEAAAA=")
+spawner_scene = ExtResource("2_fe7jk")
+
+[node name="Player" parent="." instance=ExtResource("1_xtfvc")]
+z_index = 10
+position = Vector2(-2, -64)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, 128)
+limit_left = -360
+limit_right = 360
+limit_bottom = 0
+script = ExtResource("4_505mm")
+
+[node name="HUD" parent="." instance=ExtResource("5_8n3ie")]
+
+[node name="GameOver" parent="." instance=ExtResource("6_qd4ya")]
+
+[node name="GameStart" parent="." instance=ExtResource("7_yuoqk")]
+script = ExtResource("8_363ho")

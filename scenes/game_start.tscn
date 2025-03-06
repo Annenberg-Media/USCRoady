@@ -1,0 +1,183 @@
+[gd_scene load_steps=18 format=3 uid="uid://c2xvg5cdk5tk7"]
+
+[ext_resource type="Texture2D" uid="uid://blyim2440hodf" path="res://assets/anims/gui_right.png" id="1_0nkag"]
+[ext_resource type="FontFile" uid="uid://b8xrmlrtl4byf" path="res://assets/fonts/National2-Bold.otf" id="1_dditc"]
+[ext_resource type="Texture2D" uid="uid://dod4akfqaly8j" path="res://assets/anims/gui_left.png" id="2_5c30i"]
+[ext_resource type="Texture2D" uid="uid://qi3101ffmoqs" path="res://assets/anims/gui_up.png" id="3_wjki5"]
+[ext_resource type="Texture2D" uid="uid://brvtycw1jo118" path="res://assets/anims/gui_down.png" id="4_85ehe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6uru"]
+atlas = ExtResource("1_0nkag")
+region = Rect2(17, 0, 17, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bttb"]
+atlas = ExtResource("1_0nkag")
+region = Rect2(0, 0, 17, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ep3kd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6uru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bttb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bttb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bttb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hx8ki"]
+atlas = ExtResource("2_5c30i")
+region = Rect2(0, 0, 17, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y88w"]
+atlas = ExtResource("2_5c30i")
+region = Rect2(17, 0, 17, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hihbh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hx8ki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hx8ki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y88w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hx8ki")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdonm"]
+atlas = ExtResource("3_wjki5")
+region = Rect2(0, 0, 17, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lfax"]
+atlas = ExtResource("3_wjki5")
+region = Rect2(17, 0, 17, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3l6mq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdonm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lfax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdonm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fdonm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb537"]
+atlas = ExtResource("4_85ehe")
+region = Rect2(0, 0, 17, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_secrf"]
+atlas = ExtResource("4_85ehe")
+region = Rect2(17, 0, 17, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_agmi5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb537")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb537")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb537")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_secrf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="GameStart" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.376471)
+
+[node name="StartText" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = -240.0
+offset_right = 337.0
+offset_bottom = 243.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_dditc")
+theme_override_font_sizes/font_size = 50
+text = "Welcome to USC crossy road!
+
+
+
+
+
+
+Avoid the bikes and scooters 
+for as long as you can!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Right" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(438, 569)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ep3kd")
+autoplay = "default"
+
+[node name="Left" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(298, 569)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_hihbh")
+autoplay = "default"
+
+[node name="Up" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(368, 504)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_3l6mq")
+autoplay = "default"
+
+[node name="Down" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(368, 569)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_agmi5")
+autoplay = "default"
