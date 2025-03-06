@@ -5,17 +5,12 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>USCRoady</title>
 		<style>
-html, body {
+html, body, #canvas {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+	border: 0;
 }
-/*
+
 body {
 	color: white;
 	background-color: black;
@@ -23,29 +18,10 @@ body {
 	touch-action: none;
 }
 
-.modal-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 0;
-}
-
-.modal-body iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-*/
 #canvas {
 	display: block;
-	width: 100%;
-    height: 100%;
-	max-width: 100vw;
-	max-height: 100vh;
-	object-fit: contain;
 }
-/*
+
 #canvas:focus {
 	outline: none;
 }
@@ -98,7 +74,7 @@ body {
 	padding: 1rem;
 	text-align: center;
 	z-index: 1;
-}*/
+}
 		</style>
 		<link id="-gd-engine-icon" rel="icon" type="image/png" href="USCRoady.icon.png" />
 <link rel="apple-touch-icon" href="USCRoady.apple-touch-icon.png"/>
@@ -109,7 +85,7 @@ body {
 			Your browser does not support the canvas tag.
 		</canvas>
 
-		<!--<noscript>
+		<noscript>
 			Your browser does not support JavaScript.
 		</noscript>
 
@@ -117,11 +93,11 @@ body {
 			<img id="status-splash" src="USCRoady.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
-		</div>-->
+		</div>
 
-		<!--<script src="USCRoady.js"></script>
+		<script src="USCRoady.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"USCRoady","experimentalVK":false,"fileSizes":{"USCRoady.pck":280976,"USCRoady.wasm":43016933},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":1,"ensureCrossOriginIsolationHeaders":true,"executable":"USCRoady","experimentalVK":false,"fileSizes":{"USCRoady.pck":280976,"USCRoady.wasm":43016933},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -217,7 +193,7 @@ const engine = new Engine(GODOT_CONFIG);
 		}, displayFailureNotice);
 	}
 }());
-		</script>-->
+		</script>
 	</body>
 </html>
 
